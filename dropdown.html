@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testi</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Andada+Pro&display=swap');
+        html {
+            scroll-behavior: smooth;
+        }
+        html, body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Andada Pro', serif;
+        }
+        .thingy {
+            width: 100%;
+            background-color: black;
+            float: right;
+            position: fixed;
+            margin: 0 auto;
+            
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+            padding-top: 0.5em;
+            float: right;
+        }
+        .stuff {
+            display: none;
+            position: absolute;
+            text-decoration: none;
+            float: right;
+            margin: 0;
+            right: 0;
+            
+        }
+        .dropdown:hover .stuff {
+            display: block;
+            width: 100vw;
+        }
+        svg {
+            width: 2em;
+            height: 2em;
+            filter: invert(100%);
+        }
+        svg:hover {
+            filter: invert(50%);
+            
+            transition: 0.3s;
+        }
+        a {
+            text-decoration: none;
+            color: white;
+            background-color: black;
+            display: block;
+            text-align: center;
+            transition: 0.3s;
+        }
+        a:hover {
+            color: gray;
+        }
+        #content, #shieet, #stuff, #things {
+            width: 70%;
+            margin: auto;
+            padding-top: 5em;
+        }
+        footer {
+            background-color: black;
+            color: white;
+            padding: 3em;
+            margin-top: 5em;
+        }
+        .header {
+            background-color: turquoise;
+            height: 30em;
+        }
+    </style>
+</head>
+<body>
+    <div class="thingy">
+        <div class="dropdown">
+            <span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down" viewBox="0 0 16 16">
+                <path d="M3.204 5h9.592L8 10.481 3.204 5zm-.753.659 4.796 5.48a1 1 0 0 0 1.506 0l4.796-5.48c.566-.647.106-1.659-.753-1.659H3.204a1 1 0 0 0-.753 1.659z"/>
+                </svg>
+            </span>
+            <div class="stuff">
+                <a href="#content">Tässä lukee jotain</a>
+                <a href="#shieet">Niin lukee tässäkin</a>
+                <a href="#stuff">Tämä on hyvin mielenkiintoista</a>
+                <a href="#things">Kyllä vain!</a>
+            </div>
+        </div>
+    </div>
+    <div class="header"></div>
+    <div id="content">
+        <h1>blööö</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque hic corporis blanditiis magni minima voluptatem architecto at voluptas earum eum error, id voluptates et consequuntur dolorem vitae eius doloribus. Officia!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum voluptatibus recusandae culpa vitae at nam quas accusantium atque, quia explicabo minima molestiae quam voluptas maiores quos eius commodi perspiciatis autem. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe est sapiente quae aliquam reprehenderit consequuntur repellat magni tempora maxime, odit, incidunt dolore nostrum. Quidem assumenda non ipsam alias aspernatur sint.</p>
+    </div>
+    <div id="shieet">
+        <h1>blööö2</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque hic corporis blanditiis magni minima voluptatem architecto at voluptas earum eum error, id voluptates et consequuntur dolorem vitae eius doloribus. Officia!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum voluptatibus recusandae culpa vitae at nam quas accusantium atque, quia explicabo minima molestiae quam voluptas maiores quos eius commodi perspiciatis autem. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe est sapiente quae aliquam reprehenderit consequuntur repellat magni tempora maxime, odit, incidunt dolore nostrum. Quidem assumenda non ipsam alias aspernatur sint.</p>
+    </div>
+    <div id="stuff">
+        <h1>blööö3</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque hic corporis blanditiis magni minima voluptatem architecto at voluptas earum eum error, id voluptates et consequuntur dolorem vitae eius doloribus. Officia!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum voluptatibus recusandae culpa vitae at nam quas accusantium atque, quia explicabo minima molestiae quam voluptas maiores quos eius commodi perspiciatis autem. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe est sapiente quae aliquam reprehenderit consequuntur repellat magni tempora maxime, odit, incidunt dolore nostrum. Quidem assumenda non ipsam alias aspernatur sint.</p>
+    </div>
+    <div id="things">
+        <h1>blööö4</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque hic corporis blanditiis magni minima voluptatem architecto at voluptas earum eum error, id voluptates et consequuntur dolorem vitae eius doloribus. Officia!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum voluptatibus recusandae culpa vitae at nam quas accusantium atque, quia explicabo minima molestiae quam voluptas maiores quos eius commodi perspiciatis autem. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe est sapiente quae aliquam reprehenderit consequuntur repellat magni tempora maxime, odit, incidunt dolore nostrum. Quidem assumenda non ipsam alias aspernatur sint.</p>
+    </div>
+    <footer>
+        <p>lol (c)</p>
+    </footer>
+</body>
+</html>
