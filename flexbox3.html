@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blöö</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@300&display=swap');
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+        p, h1, a {
+            font-family: 'Noto Sans Mono', monospace;
+        }
+        .page-start {
+            width: 70%;
+            margin: auto;
+            margin-left: 20%;
+        }
+        .lol {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+        }
+        #home {
+            display: flex;
+            justify-content: space-between;
+        }
+        .box {
+            display: flex;
+            width: 40%;
+            padding-top: 1em;
+        }
+        a {
+            color: white;
+            text-decoration: none;
+
+        }
+        .navbar {
+            padding-top: 2em;
+            height: 100%;
+            width: 10%;
+            position: fixed;
+            display: flex;
+            flex-direction: column;
+            background-color: black;
+            gap: 2em;
+            top: 0;
+            padding-left: 2%;
+        }
+        a:hover {
+            color: gray;
+        }
+        .some-section {
+            padding-top: 3em;
+            display: flex;
+            flex-direction: column;
+            gap: 3em;
+        }
+        .sub-thingy {
+            display: flex;
+            flex-direction: row;
+            padding-top: 3em;
+            margin: 0;
+            justify-content: space-evenly;
+            text-align: center;
+            z-index: 0;
+        }
+        .navbar svg {
+            left: auto;
+        }
+        #staff {
+            padding-top: 3em;
+        }
+        img.pöö {
+            border-radius: 50%;
+            width: 50%;
+        }
+        #information {
+            padding-top: 3em;
+        }
+        .box1 {
+            padding-top: 1em;
+        }
+        table {
+            padding: 3em;
+            width: 100%;
+        }
+        #contact {
+            padding-top: 3em;
+        }
+        svg {
+            height: 2em;
+            width: 2em;
+        }
+        @media only screen and (max-width: 1200px) {
+            .navbar {
+                flex-direction: row;
+                height: 5%;
+                width: 100%;
+                padding-top: 1em;
+                padding-left: 5%;
+            }
+            .page-start {
+                margin-left: auto;
+            }
+        }
+        h1.stupid {
+            padding-top: 3em;
+        }
+        #something {
+            display: flex;
+            flex-direction: column;
+        }
+        @media only screen and (max-width: 800px) {
+            p {
+                font-size: 12px;
+            }
+            a {
+                font-size: 13px;
+            }
+            h1 {
+                font-size: 1.5em;
+            }
+            .sub-thingy {
+                flex-direction: column;
+            }
+        }
+    </style> 
+</head>
+<body>
+    <div class="navbar">
+        <a href="#something">Home</a>
+        <a href="#staff">Staff</a>
+        <a href="#information">Information</a>
+        <a href="#contact">Contact</a>
+    </div>
+    <div class="page-start">
+        <div class="container">
+            <div id="something">
+                <h1 class="stupid">Home</h1>
+                    <div id="home">
+                        <div class="some-section">
+                            <p>Arabica Acerbic Affogato Aftertaste Aged Americano And Aroma pumpkin go froth dripper doppio redeye cultivar, coffee arabica con Bar roast eu viennese steamed mountain et Au aged java. Extraction As in Cappuccino aromatic robust siphon milk skinny, At dark redeye extra cup Blue Acerbic Beans, latte carajillo organic spoon sugar body whipped. In single froth plunger mountain eu mug sit instant ut grounds kopi-luwak cinnamon, Con shot robusta wings so Au At Acerbic filter aromatic.</p>
+                        </div>
+                    </div>
+                </div>
+            <div id="staff">
+                <h1>Staff</h1>
+                    <div class="sub-thingy">
+                    <div class="thingy">
+                        <img src="QXMBfCfR.jpg" class="pöö">
+                        <p>asdf</p>
+                    </div>
+                    <div class="thingy">
+                        <img src="QXMBfCfR.jpg" class="pöö">
+                        <p>qwerty</p>
+                    </div>
+                    <div class="thingy">
+                        <img src="QXMBfCfR.jpg" class="pöö">
+                        <p>zxcv</p>
+                    </div>
+                </div>
+            </div>
+        <div id="information">
+            <h1>Infomation</h1>
+            <div class="box1">
+                <p>Affogato spice au Beans ristretto pumpkin mug shop, milk plunger et redeye as espresso As aftertaste, Bar frappuccino Au whipped Brewed sweet. Aromatic so arabica decaffeinated robusta grinder to barista Aged breve spoon, As Blue qui milk rich Acerbic mocha Beans origin ristretto press shot, caffeine variety Americano affogato Con trifecta sweet as percolator Aroma. Mazagran con mocha rich sit go as est fair aftertaste carajillo, ristretto shop whipped robust spice grinder extraction Aged sweet turkish trifecta, aroma viennese Cappuccino froth chicory acerbic organic barista caffeine.</p>
+            </div>
+        </div>
+        <div id="contact">
+            <h1>Contact</h1>
+            <table>
+                    <tr>
+                        <td>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-door-fill" viewBox="0 0 16 16">
+                            <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5z"/>
+                          </svg>
+                        </td>
+                            <td>
+                                <p>wää</p>
+                            </td>
+                    </tr>
+                    <tr>
+                        <td>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+                        <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                      </svg>
+                        </td>
+                        <td>
+                        <p>lol</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                        <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z"/>
+                      </svg>
+                      </td>
+                      <td>
+                        <p>hmm</p>
+                        </td>
+                    </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
