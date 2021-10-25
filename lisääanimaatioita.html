@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lisää animaatioita</title>
+    <style>
+        h1.hommeli {
+            text-align: center;
+            padding-top: 3em;
+            animation: testijuttu 1s;
+            position: relative;
+        }
+        @keyframes testijuttu {
+            0% {left: 8em;}
+            100% {left: 0em;}
+        }
+        h1.hommeli2 {
+            text-align: center;
+            padding-top: 3em;
+            animation: testijuttuVasen 1s;
+            position: relative;
+        }
+        @keyframes testijuttuVasen {
+            0% {right: 8em;}
+            100% {right: 0em;}
+        }
+        h1.hommeli3 {
+            text-align: center;
+            padding-top: 3em;
+            animation: fadeInTsydeemi 1s;
+            position: relative;
+        }
+        @keyframes fadeInTsydeemi {
+            0% {top: 3em; opacity: 0;}
+            100% {top: 0em; opacity: 1;}
+        }
+        h1.hommeli4 {
+            padding-top: 3em;
+            text-align: center;
+            animation: pyörähdys 3s;
+        }
+        @keyframes pyörähdys {
+            100% {transform: rotate(360deg);}
+        }
+    </style>
+</head>
+<body>  
+    <h1 class="hommeli">test1</h1>
+    <h1 class="hommeli2">test2</h1>
+    <h1 class="hommeli3">test3</h1>
+    <h1 class="hommeli4">lol</h1>
+</body>
+</html>
