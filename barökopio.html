@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>testi</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+        html, body {
+            padding: 0;
+            margin: 0;
+            scroll-behavior: smooth;
+        }
+        p, a {
+            font-family: 'Zen Kaku Gothic Antique', sans-serif;
+            font-size: 24px;
+        }
+        .scroller a {
+            text-decoration: none;
+            color: hotpink;
+            font-size: 20px;
+            transition: 0.3s;
+        }
+        .scroller a:hover {
+            color: white;
+        }
+        h1 {
+            font-family: 'Raleway', sans-serif;
+        }
+        #container, #container2, #container3, #container4, #container5 {
+            padding: 3em;
+            padding-bottom: 15%;
+        }
+        #container {
+            background: rgba(68, 69, 84, 0.9);
+            padding-top: 12em;
+        }
+        #container2 {
+            background: rgba(127, 123, 130, 0.9);
+        }
+        .subcontainer {
+            display: flex;
+            flex-direction: row;
+            gap: 2em;
+            justify-content: center;
+            align-items: center;
+        }
+        #container3 {
+            background-color: rgba(191, 172, 181, 0.9);
+        }
+        .header {
+            width: 100%;
+            padding-top: 10em;
+            padding-bottom: 10em;
+            text-align: center;
+            background-color: #a0a0a0;
+        }
+        .scroller {
+            width: 100%;
+            padding-top: 1em;
+            padding-bottom: 1em;
+            background-color: black;
+            display: flex;
+            justify-content: space-evenly;
+            position: sticky;
+            top: 0;
+        }
+        @media only screen and (max-width: 800px) {
+            .subcontainer {
+                flex-wrap: wrap;
+            }
+            p, .scroller a {
+                font-size: 16px;
+            }
+            .header {
+                padding-top: 5em;
+                padding-bottom: 5em;
+            }
+        }
+        .background {
+            background-image: url(https://www.kuvatapetti.fi/img/printout/originals/gallery_images/Nayttokuva-2021-2-23-kello-13.24.07.png);
+            background-size: cover;
+        }
+        .background2 {
+            background-image: url(https://www.acprail.com/wp-content/uploads/2018/10/bullet-trains-1.jpg);
+        }
+        #container4 {
+            background: rgba(23, 33, 33, 0.9);
+            color: white;
+        }
+        .footer {
+            background-color: black;
+            padding: 3em;
+            color: white;
+        }
+        .footer p {
+            font-size: 16px;
+        }
+        #container5 {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            background-color: #E5D0CC;
+            gap: 3em;
+        }
+    </style>
+</head>
+<body>
+    <div class="headerbg">
+        <div class="header">
+            <h1>Lol epic</h1>
+            <p>tässä on tekstiä</p>
+        </div>
+    </div>
+    <div class="scroller">
+        <a href="#container">lol</a>
+        <a href="#container2">kek</a>
+        <a href="#container3">jej</a>
+        <a href="#container4">nyt sit oikeesti</a>
+        <a href="#container5">info tai jotain</a>
+    </div>
+    <div class="background">
+        <div id="container">
+                <h1>testiteksti xyz quick brown fox jumps over the lazy dog</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum iure ullam ducimus nemo minima eum voluptates laudantium tempore repellendus id harum eius consequuntur, obcaecati error adipisci alias nesciunt sit at? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam minima, aliquam nostrum esse sequi commodi magni laboriosam enim aliquid consequatur mollitia repellendus similique ducimus ipsa maiores explicabo, fugit temporibus voluptatibus!</p>
+        </div>
+        <div id="container2">
+            <h1>TÄSSÄ ON HEADING</h1>
+            <div class="subcontainer">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum iure ullam ducimus nemo minima eum voluptates laudantium tempore repellendus id harum eius consequuntur, obcaecati error adipisci alias nesciunt sit at? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam minima, aliquam nostrum esse sequi commodi magni laboriosam enim aliquid consequatur mollitia repellendus similique ducimus ipsa maiores explicabo, fugit temporibus voluptatibus!</p>
+                <p class="poop">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum perferendis itaque temporibus? Optio eaque quas provident, facilis cupiditate mollitia aut? Laboriosam deserunt ea nisi perspiciatis, iure quam culpa maxime rem!</p>
+            </div>
+        </div>
+        <div class="background2">
+            <div id="container3">
+                <h1>TÄSSÄ ON HEADING</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum iure ullam ducimus nemo minima eum voluptates laudantium tempore repellendus id harum eius consequuntur, obcaecati error adipisci alias nesciunt sit at? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam minima, aliquam nostrum esse sequi commodi magni laboriosam enim aliquid consequatur mollitia repellendus similique ducimus ipsa maiores explicabo, fugit temporibus voluptatibus!</p>
+            </div>
+            <div id="container4">
+                <h1>TÄSSÄ ON HEADING</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum iure ullam ducimus nemo minima eum voluptates laudantium tempore repellendus id harum eius consequuntur, obcaecati error adipisci alias nesciunt sit at? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam minima, aliquam nostrum esse sequi commodi magni laboriosam enim aliquid consequatur mollitia repellendus similique ducimus ipsa maiores explicabo, fugit temporibus voluptatibus!</p>
+            </div>
+        </div>
+        <div id="container5">
+            <div class="box">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, numquam qui. Alias illo aut libero pariatur quos quod recusandae, reprehenderit sapiente veritatis officia exercitationem dolores unde consequatur. Maxime, molestiae cupiditate.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam fugiat quisquam officia accusamus temporibus similique deleniti illum, sit aspernatur, corrupti consequuntur blanditiis quia dolores, ipsa nam at praesentium veritatis laborum?</p>
+            </div>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit vero facilis rem, eaque, dolores quas cumque, consequatur nam in quaerat animi quo temporibus aliquid amet assumenda. Cumque dolorem eum dignissimos.</p>
+        </div>
+        <div class="footer">
+            <p>ja tässä on sitten footer tekstiä ©™</p>
+        </div>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+          </script>
+    </div>
+</body>
+</html>
