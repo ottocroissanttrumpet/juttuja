@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hommeli</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New&display=swap');
+        * {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            outline: 0;
+            font-size: 100%;
+            vertical-align: baseline;
+            background: transparent;
+        }
+        p, a, h1 {
+            font-family: 'Zen Kaku Gothic New', sans-serif;
+        }
+        p {
+            font-size: 1.2em;
+        }
+        #navbar {
+            width: 100%;
+            position: fixed;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            padding: 3em;
+            background-color: black;
+            transition: 0.5s;
+        }
+        #navbar a {
+            color: white;
+            text-decoration: none;
+            display: block;
+        }
+        #navbar a:hover {
+            color: hotpink;
+        }
+        .container {
+            padding-top: 3em;
+            width: 80%;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 3em;
+        }
+        .box1 {
+            width: 50%;
+            margin-top: 2%;
+        }
+        .a, .b, .c {
+            height: 100vh;
+            width: 100%;
+        }
+        .a {
+            background-color: #FCC8B2;
+        }
+        .b {
+            background-color: #DBD8B3;
+        }
+        .c {
+            background-color: #C6D8AF;
+        }
+        .box2 {
+            margin-top: 10%;
+            display: flex;
+            align-items: flex-end;
+            margin-left: 50%;
+        }
+        h1 {
+            font-size: 3em;
+        }
+        .box3 {
+            margin-top: 5%;
+            display: flex;
+            gap: 3em;
+        }
+        .thing {
+            width: 30%;
+        }
+        @media only screen and (max-width: 1200px) {
+            p, a {
+                font-size: 1em;
+            }
+            h1 {
+                font-size: 2em;
+            }
+            #navbar {
+                padding: 1em;
+            }
+            .box1, .box2, .box3 {
+                width: 90%;
+                margin: auto;
+                padding-top: 3em;
+                padding-bottom: 3em;
+            }
+            .box3 {
+                flex-direction: column;
+                width: 100%;
+            }
+            .thing {
+                width: 100%;
+            }
+            .container {
+                padding-top: 5em;
+            }
+            .a, .b, .c {
+                display: inline-table;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="a">
+        <div id="navbar">
+            <a href="#">HOME</a>
+            <a href="#">INFO</a>
+            <a href="#">SUMTHIN</a>
+            <a href="#">CONTACT</a>
+        </div>
+        <div class="container">
+            <h1>testiteksti</h1>
+            <p>Skinny robusta chicory redeye, flavour mug, et cup froth mug skinny. Americano black roast siphon aroma frappuccino, kopi-luwak, medium robust java seasonal java. Con panna, mug saucer roast at, arabica and bar  mazagran irish shop kopi-luwak. Kopi-luwak cinnamon froth plunger pot black medium ristretto pumpkin spice. Coffee robusta, frappuccino viennese arabica whipped et so half and half irish half and half.</p>
+            <p>Acerbic, coffee cup aroma java chicory pumpkin spice. Foam single origin coffee so lungo con panna body galão java. Eu pumpkin spice mazagran, barista lungo grounds rich turkish. Plunger pot cinnamon macchiato flavour lungo black, grinder variety coffee viennese grinder. Mug that, steamed caffeine arabica fair trade dark.</p>
+            </div>
+        </div>
+        <div class="b">
+                <div class="container">
+                <div class="box1">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis dolore provident iusto nesciunt consequuntur molestiae vel odio, sit atque porro. Tempora soluta quaerat neque, delectus impedit ad iusto quos tempore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam placeat dolorum quaerat ducimus aut ratione eius est nihil odio tempora nostrum, ipsam enim quod beatae quis voluptas iusto saepe nobis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, nostrum nihil? Dolores maiores laborum aperiam voluptatibus unde earum blanditiis, repellendus consequuntur praesentium? Quaerat illum at cum animi quibusdam eaque cupiditate!</p>
+                </div>
+                <div class="box2">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum ipsum mollitia fugit accusantium labore, repudiandae nostrum ab minima. Laboriosam aliquid consequatur earum tenetur autem, iure dolorem beatae deserunt explicabo et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur ab quisquam, error labore mollitia repellendus aperiam quaerat? Dicta dolores eum sed blanditiis, ratione quo quia nihil nam rem odio cupiditate! Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur repellendus alias, assumenda placeat aliquid facere? Error ipsum amet aspernatur eveniet ipsa! Perferendis laborum ab, ex ut at rem necessitatibus odio.</p>
+                </div>
+            </div>
+        </div>
+        <div class="c">
+            <div class="container">
+                <h1>Tässä on joku title</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam cum magnam natus explicabo! Laborum, blanditiis quia sed ea animi excepturi, ab quae enim in tempore quaerat, neque numquam sint mollitia!</p>
+                <div class="box3">
+                    <p class="thing">You think water moves fast? You should see ice. It moves like it has a mind. Like it knows it killed the world once and got a taste for murder. After the avalanche, it took us a week to climb out. Now, I don’t know exactly when we turned on each other, but I know that seven of us survived the slide… and only five made it out. Now we took an oath, that I’m breaking now. We said we’d say it was the snow that killed the other two, but it wasn’t. Nature is lethal but it doesn’t hold a candle to man.</p>
+                    <p class="thing">Normally, both your asses would be dead as fucking fried chicken, but you happen to pull this shit while I’m in a transitional period so I don’t wanna kill you, I wanna help you. But I can’t give you this case, it don’t belong to me. Besides, I’ve already been through too much shit this morning over this case to hand it over to your dumb ass.</p>
+                    <p class="thing">Plays league of legends stare out the window. Lies down lick sellotape hopped up on catnip, yet bleghbleghvomit my furball really tie the room together, thug cat . Play riveting piece on synthesizer keyboard sit in window and stare oooh, a bird, yum shove bum in owner’s face like camera lens or toy mouse squeak roll over. Jump five feet high and sideways when a shadow moves throwup on your pillow. Missing until dinner time. Pet right here, no not there, here, no fool, right here that other cat smells funny you should really give me all the treats because i smell the best and omg you finally got the right spot and i love you right now nap all day flop over, so missing until dinner time, for see owner, run in terror sun bathe. Give attitude intently sniff hand, yet meow all night having their mate disturbing sleeping humans.</p>
+                </div>
+            </div>
+        </div>
+        <script>
+            var lastScrollTop;
+            navbar = document.getElementById('navbar');
+            window.addEventListener('scroll', function() {
+            var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            if(scrollTop > lastScrollTop) {
+            navbar.style.top='-8em';
+            }
+            else {
+            navbar.style.top='0';
+            }
+            lastScrollTop = scrollTop;
+            });
+        </script>
+</body>
+</html>
