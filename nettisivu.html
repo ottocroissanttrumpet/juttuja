@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>testisivut</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Zen+Antique&display=swap');
+        html, body {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: 'Zen Antique', serif;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+        }
+        a {
+            text-decoration: none;
+            color: black;
+        }
+        a:hover {
+            color: lightblue;
+        }
+        .subcontainer {
+            padding-top: 2em;
+            display: flex;
+            flex-direction: row;
+            align-items: baseline;
+            justify-content: space-between;
+        }
+        .lol {
+            display: flex;
+            gap: 5em;
+            justify-content: flex-end;
+        }
+        .poop {
+            width: 30%;
+            height: auto;
+            border-radius: 50%;
+        }
+        .thing {
+            padding-top: 5em;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+        .jotain {
+            display: flex;
+            flex-direction: row;
+            gap: 3em;
+        }
+        .hmm1, .hmm2, .hmm3 {
+            width: 150px;
+            height: 150px;
+            text-align: center;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        .hmm1 {
+            background-color: tomato;
+        }
+        .hmm2 {
+            background-color: teal;
+        }
+        .hmm3 {
+            background-color: green;
+        }
+        span {
+            display: table-cell;
+            vertical-align: middle;
+            height: 150px;
+            width: 150px;
+            text-align: center;
+            padding: 0 15px;
+        }
+        .jotain {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            padding-top: 3em;
+        }
+        .textbox {
+            padding-top: 3em;
+            width: 50em;
+        }
+        .footer {
+            margin-top: 8em;
+            padding-top: 3em;
+            padding-bottom: 3em;
+            padding-left: 5%;
+            width: 95%;
+            bottom: 0;
+            background-color: black;
+            color: white;
+        }
+        .thing {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+        @media only screen and (max-width: 1400px) {
+            .subcontainer, .lol, .jotain, .thing {
+                flex-wrap: wrap;
+                flex-direction: column;
+                align-items: center;
+            }
+            .boksi {
+                text-align: center;
+            }
+            .textbox {
+                width: 70%;
+                margin: auto;
+            }
+            .lol {
+                gap: 2em;
+            }
+        }
+        @media only screen and (max-width: 1050px) {
+            .poop {
+                width: 20em;
+                margin: 0 auto;
+            }
+        }
+        .he {
+            padding-top: 2.5em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Jonkun nimi tai jotain</h1>
+        <p>jonkun ammatti ja jotain</p>
+        <div class="subcontainer"></div>
+            <div class="lol">
+                <a href="#">HOME</a>
+                <a href="#">RESUME</a>
+                <a href="#">PROJECTS</a>
+                <a href="#">CONTACT</a>
+            </div>
+        </div>
+        <div class="thing">
+            <img class="poop" src="lll.jpg">
+            <div class="he">
+                <div class="boksi">
+                    <h3>Moro,</h3>
+                    <p>tässä on tekstiä</p>
+                </div>
+                <div class="jotain">
+                    <div class="hmm1" onclick="testi()"><span>MY RESUME</span></div>
+                    <div class="hmm2" onclick="testi()"><span>MY WORK</span></div>
+                    <div class="hmm3" onclick="testi()"><span>MY SKILLS</span></div>
+                </div>
+                <div class="textbox">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, obcaecati, harum nisi molestiae id ex totam laborum unde animi explicabo molestias sequi ratione sapiente doloremque, atque odit? Tenetur, dolores. Officiis.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>tässä on footer tekstiä (c)</p>
+    </div>
+    <script>
+        var testi = function() {
+            window.open("#","_self")
+        }
+    </script>
+</body>
+</html>
