@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>idea</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Zen+Antique&display=swap');
+    * {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        outline: 0;
+        font-size: 100%;
+        vertical-align: baseline;
+        background: transparent;
+    }
+    html {
+        scroll-behavior: smooth;
+    }
+    p {
+        font-family: 'Zen Antique', serif;
+        font-size: 17px;
+        padding-top: 5%;
+    }
+    h1 {
+        font-family: 'Zen Antique', serif;
+        font-size: 30px;
+        padding-bottom: 5%;
+        padding-top: 5%;
+        text-align: center;
+    }
+    .a {
+        background-color: #549F93;
+        height: 100vh;
+        width: 100%;
+    }
+    #b {
+        background-color: #E2B1B1;
+        height: 100vh;
+        width: 100%;
+    }
+    .c {
+        background-color: #C7D6D5;
+        height: 100vh;
+        width: 100%;
+    }
+    .container {
+        width: 80%;
+        margin: auto;
+    }
+    .thingy {
+            position: absolute;
+            bottom: 0;
+            padding-top: 1%;
+            padding-bottom: 1%;
+            background-color: black;
+            width: 100%;
+            height: 20%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .poop {
+            filter: invert(100);
+            width: 4em;
+            height: 4em;
+            position: relative;
+            animation-name: juttu;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            fill: black;
+        }
+        @keyframes juttu {
+            0% {top: 0%;}
+            50% {top: -15%;}
+            100% {top: 0%;}
+        }
+        @media only screen and (max-width: 1000px) {
+            .thingy {
+                height: 10%;
+            }
+            .poop {
+                width: 2em;
+                height: 2em;
+            }
+            p {
+                font-size: 15px;
+            }
+            h1 {
+                font-size: 20px;
+            }
+        }
+</style>
+<body>
+    <div class="a">
+        <div class="container">
+            <h1>tässä on tekstiä</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis vero dolorum ea praesentium perspiciatis, minus aliquam blanditiis. Esse quasi expedita ex modi natus non possimus eligendi corrupti, rem rerum delectus?</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat nesciunt autem eaque necessitatibus nostrum sunt nemo dicta laborum! Laudantium, sint! Repellat quasi provident doloribus assumenda! Labore amet quos rem explicabo. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, eveniet illum sit recusandae id nisi est repellendus! Nihil quis totam fuga. Harum recusandae vero delectus et vel, voluptates iusto debitis.</p>
+        </div>
+        <div class="thingy">
+            <a href="#b"><svg class="poop" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/></svg></a>
+            </svg>
+        </div>
+    </div>
+    <div id="b">
+        <div class="container">
+            <h1>ja kuinka sattuikaan? tässäkin on tekstiä. voi juku!</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime, voluptatem nisi soluta id cumque, autem hic dolore vitae, ut aperiam suscipit laborum consequatur? Eos iure quas repellendus nostrum eum cupiditate!</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci deserunt quidem eligendi quo consequuntur accusantium nam nostrum sit nulla eveniet veritatis eos, aliquam rerum quos, alias ipsa sequi possimus quasi?</p>
+        </div>
+    </div>
+    <div class="c">
+        <div class="container">
+            <h1>Saippuakauppias</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus vel, dignissimos ullam voluptatum eveniet deleniti harum adipisci modi odio nam. Quis consectetur quas velit! Molestiae obcaecati delectus possimus repellendus officia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, consequuntur quisquam laudantium voluptatibus numquam ut? Veritatis suscipit, alias eaque corporis, corrupti exercitationem necessitatibus molestiae sint iure, enim quisquam consectetur dignissimos.</p>
+            <p style="font-style: italic; color: red; font-size: 1.5em;">pointtina tässä oli nyt tehdä tuollainen tsydeemi mitä klikkaamalla siirtyy toiselle sivulle alaspäin + sivut ovat responsiiviset ja näyttää ihan semi kivoilta kaikilta päätelaitteilta</p>
+        </div>
+    </div>
+</body>
+</html>
